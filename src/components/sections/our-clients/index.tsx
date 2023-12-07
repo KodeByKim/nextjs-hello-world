@@ -1,1 +1,0 @@
-export { OurClientsSection } from "./OurClientsSection";

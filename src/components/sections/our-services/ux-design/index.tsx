@@ -1,1 +1,0 @@
-export { UXDesign } from "./UXDesign";

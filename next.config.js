@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
 const nextConfig = {
-  webpack(config) {
+  output: "standalone",
+  webpack(config, { isServer }) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg"),
     );
@@ -22,6 +23,13 @@ const nextConfig = {
 
     fileLoaderRule.exclude = /\.svg$/i;
 
+    config.resolve.extensionAlias = {
+      ".js": [".ts", ".tsx", ".js", ".jsx"],
+      ".mjs": [".mts", ".mjs"],
+      ".cjs": [".cts", ".cjs"],
+    };
+
+    config.resolve.alias["~"] = path.join(__dirname, "src");
     return config;
   },
   sassOptions: {

@@ -1,10 +1,9 @@
-import { ReactNode } from "react";
-import { DataAnalytics } from "./data-analytics";
-import { DigitalMarketing } from "./digital-marketing";
-import { DigitalStrategy } from "./digital-strategy";
-import { OurUniverse } from "./our-universe";
-import { UXDesign } from "./ux-design";
-import { WebMobileDevelopment } from "./web-mobile-development";
+import { DataAnalytics } from "./data-analytics/DataAnalytics";
+import { DigitalMarketing } from "./digital-marketing/DigitalMarketing";
+import { DigitalStrategy } from "./digital-strategy/DigitalStrategy";
+import { OurUniverse } from "./our-universe/OurUniverse";
+import { UXDesign } from "./ux-design/UXDesign";
+import { WebMobileDevelopment } from "./web-mobile-development/WebMobileDevelopment";
 
 export type TService = {
   name: string;

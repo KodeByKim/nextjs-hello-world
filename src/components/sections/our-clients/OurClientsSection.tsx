@@ -1,18 +1,16 @@
 "use client";
 import { Box, Section } from "@radix-ui/themes";
 import { useState } from "react";
-import {
-  TVRow1Col1,
-  TVRow1Col2,
-  TVRow1Col3,
-  TVRow2Col1,
-  TVRow2Col2,
-  TVRow2Col3,
-  TVRow3Col1,
-  TVRow3Col2,
-  TVRow3Col3,
-  TVRow3Col4,
-} from "./screens";
+import { TVRow1Col1 } from "./screens/TVRow1Col1";
+import { TVRow1Col2 } from "./screens/TVRow1Col2";
+import { TVRow1Col3 } from "./screens/TVRow1Col3";
+import { TVRow2Col1 } from "./screens/TVRow2Col1";
+import { TVRow2Col2 } from "./screens/TVRow2Col2";
+import { TVRow2Col3 } from "./screens/TVRow2Col3";
+import { TVRow3Col1 } from "./screens/TVRow3Col1";
+import { TVRow3Col2 } from "./screens/TVRow3Col2";
+import { TVRow3Col3 } from "./screens/TVRow3Col3";
+import { TVRow3Col4 } from "./screens/TVRow3Col4";
 
 export const OurClientsSection = () => {
   const [nums, setNums] = useState<(number | null)[]>([

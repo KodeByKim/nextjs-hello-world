@@ -1,1 +1,0 @@
-export { MoxieLawsSection } from "./MoxieLawsSection";
