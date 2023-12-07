@@ -1,16 +1,42 @@
 {
-  "name": "nextjs-hello-world",
-  "version": "1.0.0",
+  "name": "moxielabs-website",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -H 0.0.0.0",
-    "start-localhost": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install",
+    "clean": "prettier --write . && npm run lint"
   },
   "dependencies": {
-    "next": "^11.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@hookform/resolvers": "^3.3.2",
+    "@radix-ui/themes": "^2.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.14",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
+    "validator": "^13.11.0",
+    "zod": "^3.22.4"
   },
-  "license": "ISC"
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/validator": "^13.11.7",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "husky": "^8.0.3",
+    "postcss": "^8",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
 }

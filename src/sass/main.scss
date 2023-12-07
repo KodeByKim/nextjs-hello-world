@@ -1,0 +1,45 @@
+@import "variables";
+
+.gradient-text {
+  background: $blue-gradient;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.counter-text {
+  background: #0a0a0a;
+  -webkit-text-fill-color: #0a0a0a;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-stroke {
+  text-shadow:
+    -2px -2px 0 $anti-flash-white,
+    2px -2px 0 $anti-flash-white,
+    -2px 2px 0 $anti-flash-white,
+    2px 2px 0 $anti-flash-white;
+  color: $night;
+}
+
+.light-shadow {
+  box-shadow: 0px 9.07454px 9.07454px 0px rgba(0, 0, 0, 0.25);
+}
+
+.radio-container > .radio-input:checked ~ .checked-indicator {
+  opacity: 1;
+}
+
+.radio-container > .radio-input ~ .checked-indicator {
+  opacity: 0;
+}
+
+.blue-gradient {
+  background: linear-gradient(
+    89.99deg,
+    #0439c2 1.58%,
+    #1fa1d8 48.5%,
+    #15e6cd 100.58%
+  );
+}
